@@ -1,4 +1,5 @@
 ```
+//funcao retorna varios valores por referencia: horas, mins e segs.
 #include <iostream>
 
 // Recebe tempo em 'segundos', converte para horas, minutos e seguntos, e 
