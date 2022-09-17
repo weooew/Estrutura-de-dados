@@ -1,4 +1,111 @@
+obs: #include <iostream> //serve para cin cout
+obs: using namespace std; //serve para se não achar essa função ou obj olha se tá no  std
+obs: std::endl é mais lento que '\n'
+  
+## Variaveis e const / identificadores
+Variável é uma posição da memória. Nome da variável é chamado identificador.
+Escopo serve como identação e tempo de vida (saí do escopo é detruido).
 
+  **FORMAS DE INICIALIZAÇÃO:** normalmente inicia minúsculo
+    int x = 5;
+    int x(5);
+    int x{ 5 }; //recomendado
+    intx{}; 
+
+  ps: buffer (ponteiro) de entrada???
+**CONSTANTES:** normalmente usam só letras maiúsculas. 
+    const int LADO = 6;
+Obs: muda forma de acesso aos parâmetros
+  
+## Tipos fundamentais 
+- char, int bool,float, double, void
+- Modificador: unsigned long 
+  sizeof(<nome da variável>); -> mostra quantos bits usados 
+- Precisão de float e zeros a esquerda
+  printf("%02d", hora);  //só 2 Dígitos
+  printf("%.2f", peso); //depois do ponto só 2 Dígitos 
+  Obs: #include <cstdio> 
+
+- Auto (tipo do valor recebido no lado direito)
+  auto x = 5;
+  NÃO-> auto y;
+  Obs: vector<int>::iterator y = vet.begin();
+  auto y { 6.54 }; //double
+  auto y { 6.54f }; //float 
+CASTING 
+  int <-> char 
+     std::cout << (int) 'a';
+     std::cout << static_cast<int>( 'a' ); 
+
+     int num { 6 };
+     std::cout << (char) ( '0' + num); 
+
+  float <-> int 
+     int -> float divisão 
+     float a = 5/6; //dois inteiros 
+     float a = 5.0/6;
+     float a = (double)x/y;
+     float a = static_casting<double>(x) / y; //avisa quando Conversão não faz sentido 
+
+  string <-> int, 
+  float -> ver 
+      stringstream 
+
+    Math operatores: 
+      int valor = 5 * 1.3 + 'a'
+      Então:  valor = 103 
+
+std::cout << std::string("") + "eu" +  "vou" + '\n'; //concatenar strings
+std::cout << "eu" +  "vou" + '\n'; //assim não dá certo //ñ somar 2 vetores primitivos 
+
+Em etapas: 
+std::string saída {""};
+saída += "eu";
+saida += "vou";
+std::cout << saída ; 
+
+Concatenação???? 
+
+
+  
+## / representacao num / vetores, strings, ponteiros, estruturas e enumeração, estruturas de controle de fluxo, funções...
+
+## Structs
+  conj de variáveis sob o mesmo nome
+```
+struct Empregado {
+  short id;
+  string nome;
+};
+int main(){
+  Empregado carlos; //inicializei
+  carlos.id = 10;
+  carlos.nome = "Carlos Gomes";
+  
+  cout << "ID: "<< carlos.id
+        << "\nNome: " << carlos.nome << endl;
+  }
+```
+** A partir do C++11: **
+```
+struct Empregado {
+  short id;
+  string nome;
+};
+  
+void imprime_empregado(Empregado c){
+  cout << "ID: "<< carlos.id
+        << "\nNome: " << carlos.nome << endl;
+  }
+  
+int main(){
+  Empregado c {10, "Carlos"}; //inicializei
+  imprime_empregado(c);
+  }  
+```
+   
+
+  
 ## Ponteiros
 
 Aplicações:
@@ -15,4 +122,89 @@ Aplicações:
   
   - São usados na implementação eficiente de diversas estrutura de dados
   
+  Ponteiros: são variáveis que armazena o endereço de memória de outras variáveis
+  (declaração: int *nome;)
   
+        * acessa variavél cujo endereço é fornecido
+        & fornece endereço de memória de uma variável
+  
+  '''c
+  int a = 1;
+  int *p;
+  p = &a;
+    cout << "Endereço de memória de a: " << p << endl;    
+    cout << "Valor armazenado no local apontado: " << *p << endl;
+  int b = 2 + *p; //b recebe 2 + 1
+  *p = 5; //modifica valor da variável a
+  
+  '''
+APLICAÇÃO DE PONTEIROS: PASSAGEM POR REFERÊNCIA
+Para uma função modificar o valor passado como parâmetro, devemos passar o endereço de memória da variável que deve ser modificada (ponteiro). Chamamos este procedimento de passagem de parâmetro por referência.
+```
+#include <iostream>
+using namespace std;
+
+void f(int *x)
+{
+   *x = 2;
+}
+
+int main()
+{
+   int y = 1;
+   f(&y);
+   cout << y;  // Imprime o valor 2.
+   return 0;
+}
+```
+
+PONTEIROS PARA ESTRUTURAS
+```
+#include <iostream>
+#include <iomanip>
+using std::cout;
+
+struct tupla {
+   int x;
+   float y;
+};
+
+void f(tupla *p)
+{
+   (*p).y = 3;  //o que tiver na struct  //para + legibilidade p->y = 3;
+}
+
+int main()
+{
+   tupla t = {1, 2.0};
+   f(&t);       //passa endereço da struct
+   cout << std::fixed;
+   cout << t.x << std::setprecision(1) << t.y;  // Imprime "1 3.0"
+   return 0;
+}
+```
+IDENTIFICADORES DE VETORES SÃO PONTEIROS
+Quando um vetor é declarado, o nome do vetor é tratado como um ponteiro. Internamente, a compilador reserva um espaço contíguo de memória capaz de armazenar todos os elementos do vetor, e faz o nome da variável ser um ponteiro para o início deste espaço de memória. Isto implica que 
+todo vetor passado como parâmetro para uma função na verdade é passado por referência: se a função alterar o vetor, esta mudança ocorrerá no vetor passado como parâmetro.
+```
+#include <iostream>
+
+void f(int v[], int n)
+{
+   int i;
+   for (i = 0; i < n; i++)
+      v[i] += 1;
+}
+
+int main()
+{
+   int v[3] = {1,2,3};
+
+   f(v,3);
+
+   int i;
+   for (i = 0; i < 3; i++)
+      std::cout << v[i] << " "; // Imprime "2 3 4"
+   return 0;
+}
+```
