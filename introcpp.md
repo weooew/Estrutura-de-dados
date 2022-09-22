@@ -3,9 +3,9 @@ obs: using namespace std; //serve para se não achar essa função ou obj olha s
 obs: std::endl é mais lento que '\n'
   
 ## Variaveis e const / identificadores
-Variável é uma posição da memória. Nome da variável é chamado identificador.
+Variável é uma posição da memória. Nome da variável é chamado identificador(nome pode conter '\_', mas não deve iniciar com '\').
 Escopo serve como identação e tempo de vida (saí do escopo é detruido).
-
+  
   **FORMAS DE INICIALIZAÇÃO:** normalmente inicia minúsculo
     int x = 5;
     int x(5);
@@ -17,10 +17,33 @@ Escopo serve como identação e tempo de vida (saí do escopo é detruido).
     const int LADO = 6;
 Obs: muda forma de acesso aos parâmetros
   
-## Tipos fundamentais 
-- char, int bool,float, double, void
-- Modificador: unsigned long 
-  sizeof(<nome da variável>); -> mostra quantos bits usados 
+## Tipos de dados
+- tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)
+  tipos inteiros podem usar unsigned (é um modificador)
+  float(4 bytes), double(8 bytes), void, bool
+  
+  LITERAIS: unamed values inserted directly into the code-> type deduced from the literal's value
+  ```
+  bool myNameIsAlex { true }; // true is a boolean literal
+  float num = 3.4;           // 3.4 is a double literal
+  ```
+  LITERAL SUFFIXES: to change a literal default value you can use a suffix
+  |DATA TYPE     |SUFFIX            |MEANING|
+  |integral      |'u'or'U'          |unsigned int|
+  |integral      |'l'or'L'          |long int|
+  |integral      |variações de 'UL' |unsigned long|
+  |integral      |variações de 'LL' |long long|
+  |integral      |variações de 'LLU'|unsigned long long|
+  |integral      |'z'or'Z'          |signed version of std::size_t|
+  |integral      |variações de'UZ'  |std::size_t|
+  |floating point|'f'or'F'          |float|
+  |floating point|'l'or'L'          |long double|
+  |string        |'s'               |std::string|
+  |string        |'sv'              |std::string_view|
+  Scientific notation for floating points -> ex: double avogadro {6.02e23};
+  
+  
+- Modificador: sizeof(<nome da variável>); -> mostra quantos bits usados 
 - Precisão de float e zeros a esquerda
   printf("%02d", hora);  //só 2 Dígitos
   printf("%.2f", peso); //depois do ponto só 2 Dígitos 
