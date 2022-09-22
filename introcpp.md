@@ -1,6 +1,7 @@
 obs: #include <iostream> //serve para cin cout
 obs: using namespace std; //serve para se não achar essa função ou obj olha se tá no  std
 obs: std::endl é mais lento que '\n'
+obs: operadores de resolção do escopo ::
   
 ## Variaveis e const / identificadores
 Variável é uma posição da memória. Nome da variável é chamado identificador(nome pode conter '\_', mas não deve iniciar com '\').
@@ -88,8 +89,74 @@ saida += "vou";
 std::cout << saída ; 
 
 Concatenação???? 
+OBS: "" use more storage and cause slower functions to be called then ''
 
-
+## Namespace
+  é uma região declarativa que fornece um escopo para os identificadores (nome de tipos, fuinções, variáveis) dentro dele
+  usada para declarar um escopo que contém um conjunto de objetos relacionados
+  ´´´
+  //definindo seu proprio namespace
+  //Arquivo  mymath.h
+  namespace  math {
+  int  sum(int x, int y) {   return x+y; }
+  }
+  
+  // prog61.cpp
+  #include  <iostream> 
+  #include "mymath.h"
+  
+  int  main() {
+  int a{ 5 }, b = 10;
+  std::cout  << math::sum(a,b) << std::endl;
+  return  0;
+  }
+  ´´´
+  ´´´
+  //declarações using
+  #include  <iostream > // prog62.cpp2
+  using  std::cout;
+  using  std::endl;
+  namespace  math {
+  int  sum(int x, int y) { return x+y; }
+  }
+  
+  int  main() {
+  using  namespace  math;
+  int a{ 5 }, b{ 4 };
+  cout  << sum(a,b) << endl;
+  return  0;
+  }
+  ´´´
+  ´´´
+  //declarações using
+  #include  <iostream > // prog63.cpp
+  namespace  math {
+  int  sum(int x, int y) { return x+y; }
+  }
+  
+  int  main() {
+  using  std::cout; //  using  declaration
+  using  std::endl; //  using  declaration
+  
+  int a{ 5 }, b{ 4 };
+  cout  << math::sum(a,b) << endl;
+  return  0;
+  }
+  ´´´
+  #include  <iostream > // prog64.cpp23
+  namespace  math {
+  int  sum(int x, int y) { return x+y; }
+  }
+  
+  using  namespace  math;
+  int  main() {
+  using  namespace  std;
+  int a{ 5 }, b{ 4 };
+  cout  << sum(a,b) << endl; // Erro de  compilacao
+  return  0;
+  }
+  //divt div(int numer, int denom);retorna um struct e est ́a definidosob o namespacestd
+  ´´´
   
 ## / representacao num / vetores, strings, ponteiros, estruturas e enumeração, estruturas de controle de fluxo, funções...
 
