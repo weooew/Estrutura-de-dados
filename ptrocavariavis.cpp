@@ -1,4 +1,4 @@
-```
+
 /*implemente a função 'troca' (recebe como parâmetro duas variáveis 
 inteiras e trocar os valores destas variáveis)*/
 
@@ -24,4 +24,3 @@ int main()
    std::cout << x << " " << y << std::endl;
    return 0;
 }
-  
