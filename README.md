@@ -2,38 +2,38 @@
 ## [Intro a C++](introcpp.md)
 ### Função
 
-[Euler]()
+[Euler](euler.md)
 
-[Primo]()
+[Primo](primo.md)
 ### Array
 
-[Queda de dominó]()
+[Queda de dominó](domino.md)
 
-[Jogo do mercantil]()
+[Jogo do mercantil](mercantil.md)
 ### Matriz
 
-[Quadrado mágico]()
+[Quadrado mágico](magica.md)
 
-[Soldados em posição]()
+[Soldados em posição](soldados.md)
 ### String
-[Francês é fresco]()
+[Francês é fresco](frances.md)
 
-[Gansos gamados]()
+[Gansos gamados](gansos.md)
 
-[Identificando elementos]()
+[Identificando elementos](elementos.md)
 
-[Meu word quebrou]()
+[Meu word quebrou](word.md)
 
-[Não se bubula]()
+[Não se bubula](bubula.md)
 ### Struct
 
-[Aluno]()
+[Aluno](aluno.md)
 
-[Maior nota]()
+[Maior nota](maior.md)
 
-[Busca em vetor de estruturas]()
+[Busca em vetor de estruturas](buscar.md)
 ### Ponteiro
-[Troca de valores de variáveis]()
+[Troca de valores de variáveis](ptrocavariavis.md)
 
 [Função que retorna vários valores por referência]()
 
