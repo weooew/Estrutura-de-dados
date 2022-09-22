@@ -33,7 +33,7 @@
 
 [Busca em vetor de estruturas](buscar.md)
 ### Ponteiro
-[Troca de valores de variáveis](ptrocavariavis.md)
+[Troca de valores de variáveis](ptrocavariavis.cpp)
 
 [Função que retorna vários valores por referência]()
 
