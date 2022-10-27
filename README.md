@@ -52,3 +52,25 @@
 [Torres de Hanói]()
 
 [Queimada]()
+### Noções de análise de algoritmos
+
+###Tipos Abstratos de Dados
+[Matriz]()
+
+### Lista Linear com Alocação sequencial
+[Construa uma lista redimensionável - Orientada a Objetos]()
+
+[Vetor de consulta]()
+
+[Rotação à direitra]()
+
+[Fila de ingressos]()
+
+### Lista Simplesmente encadeada
+[Implementar FowardList - Funções adicionais]()
+[Implementar FowardList - Funções adicionais]()
+
+### Lista simplesmente encadeada circular
+### Projeto de Matrizes Esparsas
+### Templates
+### Lista Duplamente Encadeada circular
