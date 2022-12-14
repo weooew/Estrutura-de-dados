@@ -2,12 +2,11 @@ Forneça um algoritmo recursivo para contar quantas vezes um determinado caracte
 string. Não é permitido usar comandos de repetição nesta função.
 
 ENTRADA: 1° a string 2° caractere
+
 SAÍDA: Númerro de ocorrências do caractere na string
 
-ex:
-
+----------------------------------------------------------------------
 >>>>>>>>
-
 fundamentos de programacao
 
 a
@@ -18,8 +17,9 @@ a
 
 <<<<<<<<
 
+-----------------------------
 
-´´´
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -52,5 +52,5 @@ int main()
     
     cout << contaCaracteres(frase, frase.length(), letra); 
     return 0;
-}´
-´´´
+}
+```
