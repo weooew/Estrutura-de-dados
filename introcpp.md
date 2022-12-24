@@ -18,6 +18,8 @@ Escopo serve como identação e tempo de vida (saí do escopo é detruido).
     const int LADO = 6;
 Obs: muda forma de acesso aos parâmetros
   
+  STATIC??
+  
 ## Tipos de dados
 - tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)
   tipos inteiros podem usar unsigned (é um modificador)
@@ -29,18 +31,19 @@ Obs: muda forma de acesso aos parâmetros
   float num = 3.4;           // 3.4 is a double literal
   ```
   LITERAL SUFFIXES: to change a literal default value you can use a suffix
-  |DATA TYPE     |SUFFIX            |MEANING|
-  |integral      |'u'or'U'          |unsigned int|
-  |integral      |'l'or'L'          |long int|
-  |integral      |variações de 'UL' |unsigned long|
-  |integral      |variações de 'LL' |long long|
-  |integral      |variações de 'LLU'|unsigned long long|
+  |DATA TYPE     |SUFFIX            |MEANING                      |
+  |--------------|------------------|-----------------------------|
+  |integral      |'u'or'U'          |unsigned int                 |
+  |integral      |'l'or'L'          |long int                     |
+  |integral      |variações de 'UL' |unsigned long                |
+  |integral      |variações de 'LL' |long long                    |
+  |integral      |variações de 'LLU'|unsigned long long           |
   |integral      |'z'or'Z'          |signed version of std::size_t|
-  |integral      |variações de'UZ'  |std::size_t|
-  |floating point|'f'or'F'          |float|
-  |floating point|'l'or'L'          |long double|
-  |string        |'s'               |std::string|
-  |string        |'sv'              |std::string_view|
+  |integral      |variações de'UZ'  |std::size_t                  |
+  |floating point|'f'or'F'          |float                        |
+  |floating point|'l'or'L'          |long double                  |
+  |string        |'s'               |std::string                  |
+  |string        |'sv'              |std::string_view             |
   Scientific notation for floating points -> ex: double avogadro {6.02e23};
   
   
