@@ -1,9 +1,9 @@
 obs: #include <iostream> //serve para cin cout
-obs: using namespace std; //serve para se não achar essa função ou obj olha se tá no  std
+obs: using namespace std; //serve para se não achar essa função ou obj olha se tá no std
 obs: std::endl é mais lento que '\n'
-obs: operadores de resolção do escopo ::
+obs: operadores de resolução do escopo ::
   
-## Variaveis e const / identificadores
+## Variáveis e const / identificadores
 Variável é uma posição da memória. Nome da variável é chamado identificador(nome pode conter '\_', mas não deve iniciar com '\').
 Escopo serve como identação e tempo de vida (saí do escopo é detruido).
   
