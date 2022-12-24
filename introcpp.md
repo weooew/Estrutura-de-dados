@@ -44,6 +44,7 @@ Obs: muda forma de acesso aos parâmetros
   |floating point|'l'or'L'          |long double                  |
   |string        |'s'               |std::string                  |
   |string        |'sv'              |std::string_view             |
+  
   Scientific notation for floating points -> ex: double avogadro {6.02e23};
   
   
