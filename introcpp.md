@@ -8,10 +8,9 @@ Variável é uma posição da memória. Nome da variável é chamado identificad
 Escopo serve como identação e tempo de vida (saí do escopo é detruido).
   
   **FORMAS DE INICIALIZAÇÃO:** normalmente inicia minúsculo
-    int x = 5;
-    int x(5);
-    int x{ 5 }; //recomendado
-    intx{}; 
+    int x = 5; // assignment/atribuição
+    int x(5); //direct initialization
+    int x{ 5 }; //uniform initialization -> recomendado
 
   ps: buffer (ponteiro) de entrada???
 **CONSTANTES:** normalmente usam só letras maiúsculas. 
@@ -21,15 +20,16 @@ Obs: muda forma de acesso aos parâmetros
   STATIC??
   
 ## Tipos de dados
-- tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)
-  tipos inteiros podem usar unsigned (é um modificador)
-  float(4 bytes), double(8 bytes), void, bool
+tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)-> podem usar unsigned
+  + float(4 bytes), double(8 bytes), void, bool
   
-  LITERAIS: unamed values inserted directly into the code-> type deduced from the literal's value
+  LITERAIS: unamed values inserted directly into the code -> type deduced from the literal's value
   ```
   bool myNameIsAlex { true }; // true is a boolean literal
   float num = 3.4;           // 3.4 is a double literal
   ```
+  
+  
   LITERAL SUFFIXES: to change a literal default value you can use a suffix
   |DATA TYPE     |SUFFIX            |MEANING                      |
   |--------------|------------------|-----------------------------|
