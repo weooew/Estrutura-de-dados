@@ -23,14 +23,15 @@ Obs: muda forma de acesso aos parâmetros
 tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)-> podem usar unsigned
   + float(4 bytes), double(8 bytes), void, bool
   
-  LITERAIS: unamed values inserted directly into the code -> type deduced from the literal's value
+  LITERAIS: um valor expresso como ele mesmo e não como o valor de uma variável ou o resultado de uma expressão
   ```
   bool myNameIsAlex { true }; // true is a boolean literal
   float num = 3.4;           // 3.4 is a double literal
   ```
   
+  LITERAL SUFFIXES: to change a literal default value you can use a suffix (put at the value)
   
-  LITERAL SUFFIXES: to change a literal default value you can use a suffix
+  using namespace std::literals;
   |DATA TYPE     |SUFFIX            |MEANING                      |
   |--------------|------------------|-----------------------------|
   |integral      |'u'or'U'          |unsigned int                 |
@@ -44,8 +45,11 @@ tipos inteiros: char(1 byte), int(4 bytes), short(2 bytes), long(8 bytes)-> pode
   |floating point|'l'or'L'          |long double                  |
   |string        |'s'               |std::string                  |
   |string        |'sv'              |std::string_view             |
-  
+
   Scientific notation for floating points -> ex: double avogadro {6.02e23};
+  std::string_view-> include <string_view> header -> provides read-only access to an existing string without making a copy 
+  
+  static_cast<std::string>(sv)
   
   
 - Modificador: sizeof(<nome da variável>); -> mostra quantos bits usados 
@@ -161,6 +165,67 @@ OBS: "" use more storage and cause slower functions to be called then ''
   }
   //divt div(int numer, int denom);retorna um struct e est ́a definidosob o namespacestd
   ´´´
+ 
+## Formação da Saída
+  cabeçalho iomanip
+  std::cout << manip1 << manip2 << item;
+  
+  manipuladores: dec, oct, hex, setbase(int base), showbase, 
+  |De base              |De ponto-flutuante                                   |
+  |---------------------|-----------------------------------------------------|
+  |std::dec             |scientific -> usa notação cient.                     |
+  |std::oct             |fixed -> usa ponto fixo                              |
+  |std::hex             |setprecision(int d) -> set n de casas decimais para d|
+  |std::setbase(8/10/16)|showpoint -> reset com noshowpoint                   |
+  |std::showbase        |showpos -> + antes toda vez, reset com noshowpos     |
+  |std::noshowbase      |                                                     |
+  
+  |Outros manipuladores|Explicação                                                             |
+  |--------------------|-----------------------------------------------------------------------|
+  |setw(int n)         |set largura para n                                                     |
+  |setfill(char c)     |preenche com c os vazios                                               |
+  |left                |ajusta a saída para esquerda                                           |
+  |right               |ajusta a saída para direita                                            |
+  |boolalpha           |valores booleanos sejam impressos como true ou false, reset noboolalpha|
+  |endl                |insere novalinha e libera stream                                       |
+  
+  sizeof()
+  alignof()
+  
+  ### ESTADOS DE ERRO DA STREAM
+  cin -> tem essas variáveis: failbit[1 se tipo de dado estiver errado], eofbit[1 se tiver chegado no final da leitura], badbit[1 se a operação falhar de modo irrecuperável]
+  Para acessa-las use as funções fail(), eof(), bad() -> good retorna 1 quando as 3 retornam 0
+  Cin usa função clear() para limpar. Depois de erro continua depois de clear.
+  
+  obs: cin.get(<array_name>,<streamsize n>)
+  obs:
+## Switch
+```c
+switch(x){//if x = 1 case 1...
+  case 1:
+    std::cout << 1;
+    break;
+  case 2:
+    std::cout << 2;
+    break;
+  default://if doesnt match any other
+    std::cout << 3;
+    break;
+}  
+```
+  
+## Arrays  
+  int numbers[10];
+  int numbers[] {1, 2, 3, 4, 5 }
+  int numbers[5] = {0, 1, 4} //0,1,4,0,0
+  obs: sizeof(array)/sizeof(array[0])
+  
+  
+## Loop for each
+  for (data_type  variable_name : container_name) {
+     operations using variable_name;}
+  
+## If else
   
 ## / representacao num / vetores, strings, ponteiros, estruturas e enumeração, estruturas de controle de fluxo, funções...
 
