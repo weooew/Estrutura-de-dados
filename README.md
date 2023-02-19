@@ -4,7 +4,7 @@
 
 [Euler](euler.md)
 
-[Primo](primo.md)
+[Primo](primo.cpp)
 ### Array
 
 [Queda de dominó](domino.md)
