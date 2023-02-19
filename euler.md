@@ -1,4 +1,4 @@
-´´´cpp
+```cpp
 
 #include <iostream>
 #include <iomanip>
@@ -33,4 +33,4 @@ int main(){
     cout << fixed << setprecision(6) << euler(n);
     return 0;
 }
-´´´
+```
