@@ -14,7 +14,7 @@
 
 [Quadrado mágico](magica.md)
 
-[Soldados em posição](soldados.md)
+[Soldados em posição](soldadosemposicao.md)
 ### String
 [Francês é fresco](frances.md)
 
