@@ -5,7 +5,7 @@
 [Euler](euler.md)
 
 [Primo](primo.cpp)
-### Array
+### [Array](array.md)
 
 [Queda de dominó](domino.md)
 
