@@ -35,7 +35,7 @@
 ### Ponteiro
 [Troca de valores de variáveis](ptrocavariavis.cpp)
 
-[Função que retorna vários valores por referência]()
+[Função que retorna vários valores por referência](trocavariosvalores.md)
 
 [Função que altera estrutura passada por referência]()
 
