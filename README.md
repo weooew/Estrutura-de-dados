@@ -20,29 +20,29 @@
 
 [Gansos gamados](gansos.md)
 
-[Identificando elementos](elementos.md)
+[Identificando elementos](elementos.md) :x:
 
 [Meu word quebrou](word.md)
 
-[Não se bubula](bubula.md)
+[Não se bubula](bubula.md) :x:
 ### Struct
 
 [Aluno](aluno.md)
 
 [Maior nota](maior.md)
 
-[Busca em vetor de estruturas](buscar.md)
+[Busca em vetor de estruturas](buscar.md) :x:
 ### Ponteiro
 [Troca de valores de variáveis](ptrocavariavis.cpp)
 
 [Função que retorna vários valores por referência](trocavariosvalores.md)
 
-[Função que altera estrutura passada por referência]()
+[Função que altera estrutura passada por referência](altera.md) :x:
 
-[Função que altera vetor de estruturas]()
+[Função que altera vetor de estruturas](alteravetor.md) :x:
 
 ### Alocação
-[Inserção e remoção de estruturas em um vetor]()
+[Inserção e remoção de estruturas em um vetor]() :x:
 
 ## Recursão
 #### Classe:
@@ -79,12 +79,12 @@
 [Atividade]()
 
 ### Tipos Abstratos de Dados
-[Matriz]()
+[Matriz]() :x:
 
 ### Lista Linear com Alocação sequencial
-[Construa uma lista redimensionável - Orientada a Objetos]()
+[Construa uma lista redimensionável - Orientada a Objetos]() :x:
 
-[Vetor de consulta]()
+[Vetor de consulta]() :x:
 
 [Rotação à direitra]()
 
@@ -93,9 +93,9 @@
 ### Iterador da classe std::vector
 
 ### Lista Simplesmente encadeada
-[Implementar FowardList - Funções adicionais - ptr 1]()
+[Implementar FowardList - Funções adicionais - ptr 1]() :x:
 
-[Implementar FowardList - Funções adicionais - ptr 2]()
+[Implementar FowardList - Funções adicionais - ptr 2]() :x:
 
 ### Lista simplesmente encadeada circular
 
@@ -108,33 +108,41 @@
 ### Filas e Pilhas
 [queue - implementando Fila com duas Pilhas]()
 
-[queue - Copa do mundo]()
+[queue - Copa do mundo]() :x:
 
-[stack - Queimada - com pilha]()
+[stack - Queimada - com pilha]() :x:
 
-[stack - Labirinto II - Fuga com pilha]()
+[stack - Labirinto II - Fuga com pilha]() :x:
 
 ### Árvore Binárias
-[Calculando a altura e o número de nós de uma árvore binária]()
+[Calculando a altura e o número de nós de uma árvore binária]() :x:
+ 
+[Soma das chaves, chave mínima e outras operações]() :x:
 
-[Soma das chaves, chave mínima e outras operações]()
+[Mexendo nas Folhas da árvore]() :x:
 
-[Mexendo nas Folhas da árvore]()
+[Clonando árvores]() :x:
 
-[Clonando árvores]()
+[Número de chaves (iterativo)]() :x:
 
-[Número de chaves (iterativo)]()
-
-[Caminho par o nó]()
+[Caminho par o nó]() :x:
 
 ### Binary Search Tree - BST
-[Nós sem ponteiro para Pai - mínimo, máximo, sucessor e antecessor]()
+[Nós sem ponteiro para Pai - mínimo, máximo, sucessor e antecessor]() :x:
 
-[Nós com ponteiro para Pai - inserção e busca]()
+[Nós com ponteiro para Pai - inserção e busca]() :x:
 
 ### Algoritmos de Ordenação de Complexidade O
-[sorting - criando um bubble para listas]()
+[sorting - criando um bubble para listas]() :x:
 
-[sorting - criando um insertionsort para listas]()
+[sorting - criando um insertionsort para listas]() :x:
 
 ### Quicksort
+
+### AF
+[Funções adicionais em Lista simplismente encadeada]()
+[sorting, vector: hora do recreio]()
+[stack: diamantes e areia]()
+[queue, stack: implementando pilha com duas filas]()
+[tree: funções adicionais de árvore binária]()
+
