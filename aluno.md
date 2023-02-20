@@ -1,40 +1,65 @@
-Crie uma estrutura 'aluno' com: matrícula (inteiro), nome completo (máximo de 100 caracteres, que podem incluir espaços), e média do aluno (float ou double).
+Crie uma estrutura 'aluno' com: nome (máx 80 caracteres, sem espaços), matrícula (inteiro), disciplina (120, sem espaço) e nota (double).
 
-### Entrada:
+Uma função de leitura, e outra função que receba um registro de um aluno e imprima "[Nome_Aluno] aprovado(a) em [Nome_Disciplina]" se o aluno passou por média (nota maior ou igual a 7) e "[Nome_Aluno] reprovado(a) em [Nome_Disciplina]" caso contrário.
 
-1: número de alunos no vetor de alunos.
+Obs: Um dos problemas que pode acontecer ao ler uma string, é que o buffer de leitura pode conter lixo na hora de ler a string do usuário. (std::cin.ignore())
 
-2: 3 linhas para cada aluno no vetor, (1a a matrícula, 2a nome, 3a média)
-
-Última linha: matrícula a ser localizada no vetor.
-
-### Saída:
-
-1: nome do primeiro aluno encontrado cuja matrícula é igual à matrícula fornecida na última linha da entrada, ou "NAO ENCONTRADA" caso nenhum aluno tenha esta matrícula.
-
-2: Média do aluno encontrado (caso algum tenha a matrícula sendo buscada).
-
-----------------
+```
 <<
-4
-5
-Joao da Silva
-2.5
-3
-Maria dos Santos
-8.2
-8
-Jose de Souza
-7
-2
-Ana Lima
-3.3
-8
-
+Joao
+1
+FUP
+8.5
 >>
-Jose de Souza
-7.0
--------------------
-```c
+Joao aprovado(a) em FUP
+----------
+<<
+Rufus
+2
+Matematica
+4
+>>
+Rufus reprovado(a) em Matematica
+```
 
+```c
+#include <iostream>
+#include <istream>
+#include <string>
+using namespace std;
+/*função de leitura dos valores do registro de um aluno, lidos do usuário, 
+função que receba um registro de um aluno e imprima "[Nome_Aluno] aprovado(a)/reprovado em [Nome_Disciplina]" (nota maior ou igual a 7) ou 
+
+Seu programa deve então ler os dados de um aluno usando registro e fazer uso da 
+função que determina se o aluno foi aprovado ou não, gerando o resultado correto.
+*/
+
+struct aluno{
+    string nome;
+    int matricula;
+    string disciplina;
+    double nota;
+
+} aluno1;
+
+int main(){
+    
+        cin >> aluno1.nome;
+        cin >> aluno1.matricula;
+        cin.ignore();
+        cin >> aluno1.disciplina;
+        cin >> aluno1.nota;
+        cin.ignore();
+    
+        cout <<  aluno1.nome;
+        if(aluno1.nota >= 7){
+            cout << " aprovado(a) em ";
+        }
+        else{
+            cout << " reprovado(a) em ";
+        }
+        cout << aluno1.disciplina;
+    
+    return 0;
+}
 ```
