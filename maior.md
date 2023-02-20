@@ -26,3 +26,15 @@ Matematica
 8
 <<
 Maria , 8.0
+-----
+>>
+Rufus
+3
+Matematica
+4
+Carlos
+5
+Matematica
+4
+<<
+Rufus e Carlos , 4.0
