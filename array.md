@@ -3,12 +3,12 @@ STATIC ARRAY (**compile time constant, no changing**)
 Definition: collection of elements of the same type placed in contiguous memory locations
 
 
-Typical declaration is:
+**Typical declaration is:**
 
   <data_type> name [<size>];
  
   
-Initializing:
+**Initializing:**
   
   int foo [5] = { 16, 2, 77, 40, 12071 }; 
   
