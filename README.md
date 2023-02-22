@@ -42,7 +42,7 @@
 [Função que altera vetor de estruturas](alteravetor.md) :x:
 
 ### Alocação
-[Inserção e remoção de estruturas em um vetor]() :x:
+[Inserção e remoção de estruturas em um vetor](aloca.md) :x:
 
 ## Recursão
 #### Classe:
@@ -67,11 +67,11 @@
 
 [Triângulo de Somas](triangulo_soma_recursiva.md)
 
-[Operações básicas]() :x:
+[Operações básicas](operbasica.md) :x:
 
-[Torres de Hanói]() :x:
+[Torres de Hanói](torres.md) :x:
 
-[Queimada]() :x:
+[Queimada](queimada.md) :x:
 
 [Mais propostas](extras.md)
 
