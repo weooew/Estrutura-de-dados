@@ -76,13 +76,26 @@
 [Mais propostas](extras.md)
 
 ### Noções de análise de algoritmos
-[Atividade]()
+[Atividade](https://github.com/weooew/Estrutura-de-dados-2022.2/blob/main/Atividade-Semanal-Analise-Assint%C3%83%C2%B3tica.pdf)
+
+[Gabarito](https://github.com/weooew/Estrutura-de-dados-2022.2/blob/main/gabarito.pdf)
 
 ### Tipos Abstratos de Dados
-[Matriz]() :x:
+classe:
+[classe Pessoa]()
+
+[TAD point]()
+
+[TAD matriz]()
+
+[Matriz](matriz.md) :x:
 
 ### Lista Linear com Alocação sequencial
-[Construa uma lista redimensionável - Orientada a Objetos]() :x:
+classe:
+
+[Vector]()
+
+[Construa uma lista redimensionável - Orientada a Objetos](listaredimencionavel.md) :x:
 
 [Vetor de consulta]() :x:
 
