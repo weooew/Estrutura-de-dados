@@ -1,5 +1,4 @@
-# Estrutura-de-dados-2022.2
-# ED
+# Estrutura de dados
 ### [Recursão](recursao.md)
 
 <img align= "right" width= "250" height= "150" src= "https://user-images.githubusercontent.com/102996679/236348102-d0b1fe55-e979-4894-9aaa-ba6ce8fead40.png">
