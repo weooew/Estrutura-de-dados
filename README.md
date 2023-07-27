@@ -80,37 +80,6 @@
 ### Alocação
 [Inserção e remoção de estruturas em um vetor](aloca.md) :x:
 
-## Recursão
-#### Classe:
-[Soma dos elementos do vetor](soma_recursiva.cpp)
-
-[Fibonacci](fibonacci_recursivo.cpp)
-
-[Fatoral iterativa](fatoral_recursiva.cpp)
-
-[Maior valor do vetor](maximo_recursivo.cpp)
-
-[Exponencial](exponencial_recursivo.cpp)
-
-[Inverte vetor](inverte_vetor_recursivo.cpp)
-
-[Triangulos](triangulo_recursivo.cpp)
-
-[Palindromo - palavra igual de trás para frente](palindromo_recursivo.cpp)
-
-#### Casa:
-[Contando caracteres recursivamente](contando_recursiva.md)
-
-[Triângulo de Somas](triangulo_soma_recursiva.md)
-
-[Operações básicas](operbasica.md) :x:
-
-[Torres de Hanói](torres.md) :x:
-
-[Queimada](queimada.md) :x:
-
-[Mais propostas](extras.md)
-
 ### Noções de análise de algoritmos
 [Atividade](https://github.com/weooew/Estrutura-de-dados-2022.2/blob/main/Atividade-Semanal-Analise-Assint%C3%83%C2%B3tica.pdf)
 
