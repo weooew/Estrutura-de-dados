@@ -5,3 +5,26 @@ Comece do início e vá comparando os elem de 2 em 2:
 
 * quando da ok mova para a próxima comparação 
 * quando não da ok vá movendo o elem até sua posição 'correta' até o momento
+
+```
+#include <stdio.h>
+#include <string.h>
+
+
+void insertion_sort(int vet[], int ini, int fim){ //versão recursiva 
+    
+}
+
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    int vetor[n];
+    for(int i = 0; i < n; i++){
+        scanf("%d", &vetor[i]);
+    }
+    insertion_sort(vetor, 0, n-1);
+    
+    for(int i = 0; i < n; i++) printf("%d ", vetor[i]);
+}
+```
