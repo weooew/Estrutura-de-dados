@@ -10,9 +10,8 @@ Saída:
 
 9
 
-DADO: 
 ```
-#include <stdio.h>
+#include <stdio.h>//código base
 
 int maior(int vet[], int n){
     
