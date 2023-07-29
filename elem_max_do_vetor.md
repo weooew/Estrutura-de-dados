@@ -11,7 +11,7 @@ Saída:
 9
 
 DADO: 
-´´´
+```
 #include <stdio.h>
 
 int maior(int vet[], int n){
@@ -28,7 +28,8 @@ int main(){
     }
     printf("%d", maior(vetor, n));
 }
-´´´
+```
+
 ```
 #include <stdio.h>
 
