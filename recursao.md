@@ -1,21 +1,13 @@
 # Recursão
-[Elemento máximo de um vetor]()
+[Elemento máximo de um vetor](elem_max_do_vetor.md)
 
-[Inverter um vetorde inteiros]()
+[Inverter um vetorde inteiros](invertervetor.md)
 
-[Palíndromos]()
+[Palíndromos](palindromos.md)
 
-[Soma de digitos de um inteiro positivo]()
+[Soma de digitos de um inteiro positivo](somadosdig.md)
 
-[Existe soma vetor]()
-
-[Está contido no vetor]()
-
-[Contar ocorrência de letra]()
-
-[Máximo divisor Comum]()
-
-[Triângulo de números]()
+[Existe soma vetor](existesomavetor.md)
 
 [Soma dos elementos do vetor](soma_recursiva.cpp)
 
@@ -36,6 +28,14 @@
 [Contando caracteres recursivamente](contando_recursiva.md)
 
 [Triângulo de Somas](triangulo_soma_recursiva.md)
+
+[Está contido no vetor](estacontidonovetor.md) :x:
+
+[Contar ocorrência de letra](contarocorrenciasdeletra.md) :x:
+
+[Máximo divisor Comum](mdc.md) :x:
+
+[Triângulo de números](triang.md) :x:
 
 [Operações básicas](operbasica.md) :x:
 
