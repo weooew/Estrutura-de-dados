@@ -16,7 +16,7 @@
 **PS:** in loco(transforma a entrada sem usar estruturas de dados auxiliares, entrada é geralmente sobrescrita pela saída conforme o algoritmo é executado; select-sort)) ou estável(não altera a posição relativa de elementos que tˆem um mesmo valor; bubble, insert)
 [Extras](extrasord.md)
 
-### [Teste de performace dos algoritmos 'de ordenação']()
+### [Teste de performace dos algoritmos 'de ordenação'](teste.md)
 
 ### [TAD]()
 
