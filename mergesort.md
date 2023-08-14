@@ -43,3 +43,42 @@ void mergesort(int A[], int c, int f) {
   }
 }
 ```
+# Merge-sort versão 2 (dividir o vetor em três partes (aproximadamente) de igual tamanho)
+Cada parte é então ordenada recursivamente e depois é feito o Intercala simultaneamente nas três partes.
+
+
+Faça a analise de complexidade dessa versão. Ela é mais rápida que a versão original?
+
+Entrada:
+10
+15 2 5 7 9 22 1 58 46 89
+
+
+Saída:
+1 2 5 7 9 15 22 46 58 89
+```
+#include <stdio.h>
+#include <string.h>
+
+
+void merge_sort3(int vet[], int ini, int fim){
+    
+}
+
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    int vetor[n];
+    for(int i = 0; i < n; i++){
+        scanf("%d", &vetor[i]);
+    }
+    merge_sort3(vetor, 0, n-1);
+    
+    for(int i = 0; i < n; i++) printf("%d ", vetor[i]);
+}
+```
+
+
+
+
