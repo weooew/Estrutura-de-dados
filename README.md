@@ -14,6 +14,7 @@
 <img align= "right" width= "300" height= "150" src= "https://user-images.githubusercontent.com/102996679/236348080-a0ad90ac-f422-4eb1-a949-9d0f23a4515b.png">
 
 **PS:** in loco(transforma a entrada sem usar estruturas de dados auxiliares, entrada é geralmente sobrescrita pela saída conforme o algoritmo é executado; select-sort)) ou estável(não altera a posição relativa de elementos que tˆem um mesmo valor; bubble, insert)
+[Extras](extrasord.md)
 
 ### [Teste de performace dos algoritmos 'de ordenação']()
 
