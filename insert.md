@@ -11,8 +11,7 @@ Comece do início e vá comparando os elem de 2 em 2:
 #include <string.h>
 
 
-void insertion_sort(int vet[], int ini, int fim){ //versão recursiva 
-    
+void insertion_sort(int vet[], int ini, int fim){ //versão recursiva    
 }
 
 
