@@ -17,6 +17,8 @@ void selectisort(int v[], int ini, int fim){
     }
   }
 }
+void select_sort(int vet[], int ini, int fim){//recursiva   
+}
 
 int main(){
     int n;
