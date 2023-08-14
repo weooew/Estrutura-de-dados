@@ -18,7 +18,7 @@
 
 ### [Teste de performace dos algoritmos 'de ordenação'](teste.md)
 
-### [TAD]()
+### [TAD](tad.md)
 
 ### [Lista sequêncial e encadeada(posições não contíguas)]()
 
