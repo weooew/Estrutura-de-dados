@@ -20,7 +20,7 @@
 
 ### [TAD](tad.md)
 
-### [Lista sequêncial e encadeada(posições não contíguas)]()
+### [Lista sequêncial e encadeada(posições não contíguas)](listas.md)
 
 ### [Pilha(LIFO)]()
 
