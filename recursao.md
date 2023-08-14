@@ -25,9 +25,9 @@
 
 [Palindromo - palavra igual de trás para frente](palindromo_recursivo.cpp)
 
-[Contando caracteres recursivamente](contando_recursiva.md)
+[Contando caracteres recursivamente](contando_recursiva.md) :x:
 
-[Triângulo de Somas](triangulo_soma_recursiva.md)
+[Triângulo de Somas](triangulo_soma_recursiva.md) :x:
 
 [Está contido no vetor](estacontidonovetor.md) :x:
 
