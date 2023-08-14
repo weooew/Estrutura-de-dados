@@ -14,6 +14,18 @@ Comece do início e vá comparando os elem de 2 em 2:
 void insertion_sort(int vet[], int ini, int fim){ //versão recursiva    
 }
 
+void insertionsort ( int A [] , int l , int r ) {
+    for ( int j = l +1; j <= r ; j ++) {
+        int key = A [ j ];
+        int i = j -1;
+        while ( i >= l && A [ i ] > key ) {
+            A [ i +1] = A [ i ];
+            i - -;
+        }
+        A [ i +1] = key ;
+    }
+}
+
 
 int main(){
     int n;
