@@ -22,9 +22,7 @@
 
 ### [Lista sequêncial e encadeada(posições não contíguas)](listas.md)
 
-### [Pilha(LIFO)]()
-
-### [Fila(FIFO)]()
+### [Pilha(LIFO) e Fila(FIFO)](pf.md)
 
 ### [Árvores binárias](arv.md)
 
