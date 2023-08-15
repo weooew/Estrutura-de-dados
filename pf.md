@@ -1,3 +1,4 @@
+## Implemente as interfaces da Pilha e Fila usando a implementação encadeada.
 ### main.cpp
 ```
 #include <cstdio>
@@ -280,4 +281,178 @@ public:
 #include "stack.cpp"
 #endif
 ```
+## Implemente um programa que recebe uma frase e inverta cada palavra sem alterar a ordem das palavras na frase. 
+
+Entrada:
+
+lua de cristal que me faz sonhar
+
+Saída:
+
+aul ed latsirc euq em zaf rahnos
+
+OBS: Considere que as palavras estão separadas por UM espaço e não temos virgulas e nenhuma outra pontuação.
+### main.cpp
+```
+#include <iostream>
+#include <string>
+#include "stack.h"
+using namespace std;
+
+int main() {
+    string frase;
+	getline(cin, frase);
+	
+	Stack<char> pilha;
+	for(int i = 0 ; i < frase.length(); i++){
+	    if(frase[i] != ' ')
+    	    pilha.push(frase[i]);
+    	
+    	else{
+    	    while(!pilha.empty()){
+    	        cout << pilha.pop();
+    	    }
+    	    
+    	    cout << ' ';
+	    }
+	}
+	
+	while(!pilha.empty()){
+        cout << pilha.pop();
+    }
+	
+	return 0;
+}
+```
+### node.h
+```
+#ifndef NODE_H
+#define NODE_H
+
+template<typename T>
+class Node{//nós para lista encadeada que será usada compor a pilha
+private:
+    T value;  //valor 
+    Node<T>* next;  //ponteiro para o proximo no 
+public:
+    Node(T val, Node<T> *nextPtr);
+
+    T getValue();
+    Node<T>* getNext();
+    void setValue(T newValue);
+    void setNext(Node<T>* newNext);
+};
+#include "node.cpp"
+#endif
+```
+### node.cpp
+```
+#ifndef NODE_CPP
+#define NODE_CPP
+#include "node.h"
+
+template<typename T>
+Node<T>::Node(T val, Node<T> *nextPtr){
+    value = val;
+    next = nextPtr;
+}
+template<typename T>
+T Node<T>::getValue(){
+    return this->value;
+}
+template<typename T>
+void Node<T>::setValue(T newValue){
+    this->value = newValue;
+}
+template<typename T>
+Node<T>* Node<T>::getNext(){
+    return this->next;
+}
+template<typename T>
+void Node<T>::setNext(Node<T>* newNext){
+    this->next = newNext;
+}
+//templaate -> gera classes genericas p/ 
+#endif
+```
+### stack.h
+```
+#ifndef STACK_H
+#define STACK_H
+#include "node.h"
+
+template<typename T>
+class Stack{
+private:
+    Node<T>* m_top; // Ponteiro para o topo da pilha se houver, caso contrário será null
+    int m_size;   // numero de elementos na lista
+    
+public:
+    Stack();
+    ~Stack();
+    bool empty();
+    void push(T value); //Insere no topo da pilha
+    T pop(); //Remove do topo da pilha, se lista vazia -> throw std :: runtime_error("Empty queue.")
+};
+#include "stack.cpp"
+#endif
+```
+### stack.cpp
+```
+#ifndef STACK_CPP
+#define STACK_CPP
+#include "node.h"
+#include "stack.h"
+#include <stdexcept>
+
+//Node<T>* m_top; // Ponteiro para o topo da pilha se houver, caso contrário será null
+//m_size;   // numero de elementos na lista
+    
+    template<typename T>
+    Stack<T>::Stack(){// construtor: cria pilha vazia
+        m_top = nullptr;
+        m_size = 0;
+    }
+    
+    // destrutor: libera memoria alocada
+    template<typename T>
+    Stack<T>::~Stack(){
+        while(!empty()){
+            pop();
+        }
+    }
+
+    // Retorna true se e somente se a pilha estiver vazia
+    template<typename T>
+    bool Stack<T>::empty(){
+        return (m_size == 0);
+    }
+    
+    // Insere no topo da pilha
+    template<typename T>
+    void Stack<T>::push(T value){
+        Node<T>* newNode = new Node<T>(value, m_top);
+        m_top = newNode;
+        m_size++;
+    }
+    
+    // Remove elemento do topo da pilha-> Se vazia throw std :: runtime_error("Empty queue.")
+    template<typename T>
+    T Stack<T>::pop(){
+         if(empty()){
+            throw std::runtime_error("Empty stack.");
+        }
+    
+        T value = m_top->getValue();
+        Node<T>* temp = m_top;
+        m_top = m_top->getNext();
+        delete temp;
+        m_size--;
+    
+        return value;
+    }
+
+#endif
+```
+
 
