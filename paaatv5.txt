@@ -1,0 +1,24 @@
+C4->Análise Ascendente
+R  2, 5, 8
+CṔ 1,3,7,8
+
+R2: Qual o perigo em potencial dos nomes sensíveis a capitação?
+R5: Que categoria de variáveis de referência em C++ é sempre composta por apelidos?
+R8: Após o projeto e implementação de uma linguagem , quais são os outros 4 tiposde vinculação que podem ocorrer em um programa?
+CP1: Decida qual das seguintes dormas de identificadores é mais legível e justifique.
+SumOfSales
+sum_of_sales
+SUMOFSALES
+
+CP3:Escreva uma sentença de atribuição simples com um operador aritmetico em alguma linguagem que você conheça. Para cada componente da sentença, liste as vinculações necessárias para determinar a semântica quando a senteça é executada. Para cada vinculaçãp, indique o tempo de vinculação usado para a linguagem.
+CP7:
+CP8:
+
+
+C5-Nomes, Variáveis e o Conceito de Vinculação Escopo, Tempo de Vida e Ambientes de Referência
+R 1,2,8,12,15,19
+CP 6,7,8,9,10,11,12 
+
+
+C6-Tipos de Dados Primitivos Enumerações, Introdução a Arrays Lineares e Arrays Associativos Finalização de Matrizes Matrizes Associativas Registros, Tuplas, Listas e Uniões Ponteiros e Referências Verificação de Tipos
+R 3,6,7
